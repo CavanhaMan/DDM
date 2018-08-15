@@ -27,7 +27,7 @@ public class MainActivity extends Activity implements View.OnKeyListener {
 
     @Override
     public boolean onKey(View v, int keyCode, KeyEvent event){
-        if (keyCode==KeyEvent.KEYCODE_ENTER) & keyEvent.getAction() == KeyEvent.ACTION_UP){
+        if (keyCode==KeyEvent.KEYCODE_ENTER && event.getAction()==KeyEvent.ACTION_UP){
             verificar();
             return true;
         }

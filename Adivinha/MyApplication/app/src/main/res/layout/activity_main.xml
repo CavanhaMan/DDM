@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@jogoiftm"
+        android:text="IFTM GAME"
         android:textAlignment="center"
         android:textColor="@android:color/holo_green_dark"
         android:textSize="36sp"
@@ -23,7 +23,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.082"
-        tools:text="IFTM Game" />
+        tools:text="IFTM GAME" />
 
     <TextView
         android:id="@+id/textView"
@@ -31,24 +31,13 @@
         android:layout_height="wrap_content"
         android:text="Adivinhe o Número"
         android:textAlignment="center"
-        android:textSize="36sp" />
-
-    <EditText
-        android:id="@+id/entrada"
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:singleLine="false"
-        android:text="Digite aqui"
-        android:textSize="36sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/mensagem"
         android:layout_width="167dp"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="30sp" />
+        android:textSize="20sp" />
 
     <!--ImageView
         android:id="@+id/iftmimg"
