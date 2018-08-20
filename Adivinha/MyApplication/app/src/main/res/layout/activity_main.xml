@@ -1,54 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/iftm"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:background="#ccffcc"
+    tools:context=".MainActivity" >
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="IFTM GAME"
-        android:textAlignment="center"
-        android:textColor="@android:color/holo_green_dark"
+        android:id="@+id/titulo"
+        android:text="CAVANHA's GAME"
+        tools:text="CAVANHA's GAME"
         android:textSize="36sp"
         android:textStyle="bold"
-        android:typeface="serif"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.082"
-        tools:text="IFTM GAME" />
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/titulo2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/titulo"
+        android:gravity="center_vertical|center_horizontal"
         android:text="Adivinhe o Número"
-        android:textAlignment="center"
-        android:textSize="20sp" />
+        tools:text="Adivinhe o Número"
+        android:textIsSelectable="true"
+        android:textSize="20sp"/>
 
     <TextView
         android:id="@+id/mensagem"
-        android:layout_width="167dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/titulo2"
+        android:gravity="center_vertical|center_horizontal"
+        android:textIsSelectable="true"
         android:textSize="20sp" />
 
-    <!--ImageView
-        android:id="@+id/iftmimg"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:contentDescription="@iftm_logo"
-        android:scaleType="fitCenter"
-        android:src="@drawable/iftm"
-        android:visibility="visible"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" /-->
+    <EditText
+        android:id="@+id/entrada"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mensagem"
+        android:layout_marginStart="134dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="36sp" />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/btAdivinha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="184dp"
+        android:text="Adivinhe!"
+        android:onClick="tentaAdivinhar" />
+
+    <TextView
+        android:text="Tentativas: 0"
+        android:id="@+id/contaTentativas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btAdivinha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp" />
+
+</RelativeLayout>

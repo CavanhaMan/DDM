@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">My Application</string>
-    <string name="texto2">Acertô Mizeravi!</string>
-    <string name="texto3">Deu ruim! É menos!</string>
-    <string name="texto4">Faiô! É mais!</string>
+    <string name="app_name">Adivinhação</string>
+    <string name="texto2">Parabéns! Você adivinhou!</string>
+    <string name="texto3">É muito. Tente um numero menor.</string>
+    <string name="texto4">É pouco. Tente um numero maior.</string>
 </resources>
