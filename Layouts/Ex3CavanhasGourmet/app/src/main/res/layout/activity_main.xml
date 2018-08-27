@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Rodrigo CavanhaMan -->
+<!-- CRIA UM GRID COM 2 ELEMENTOS - O TITULO E A LISTA -->
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="1"
+    android:rowCount="2">
+
+    <!-- CRIA O TÍTULO -->
+    <ImageView
+        android:id="@+id/cavanhas"
+        android:layout_width="wrap_content"
+        android:layout_height="124dp"
+        android:layout_column="0"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="0"
+        android:contentDescription="@drawable/cavanhas"
+        android:src="@drawable/cavanhas"/>
+
+    <!-- CRIA A ROLAGEM PARA A LISTA -->
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rolapizzas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="130dp"
+        android:layout_row="1">
+
+        <!-- CRIA A LISTA -->
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/listapizzas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="27">
+
+            <!-- **************** MENU 1 (0 1)********************* -->
+            <Button
+                android:id="@+id/bt1"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="fill_vertical"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_row="0"
+                android:layout_rowSpan="2"
+                android:background="#ff8800"
+                android:text="1"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/menu1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginRight="50dp"
+                android:layout_row="0"
+                android:text="À moda do freguês"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/descr1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginRight="50dp"
+                android:layout_row="1"
+                android:text="Escolha no máximo 5 ingredientes"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- **************** MENU 2 (2 3)********************* -->
+            <Button
+                android:id="@+id/bt2"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="fill_vertical"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_row="2"
+                android:layout_rowSpan="2"
+                android:background="#ff8800"
+                android:text="2"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/menu2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginRight="50dp"
+                android:layout_row="2"
+                android:text="4 Queijos"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/descr2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginRight="50dp"
+                android:layout_row="3"
+                android:text="Molho, mussarela, parmesão, provolone e catupiry"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- **************** MENU 3 (4 5)********************* -->
+            <Button
+                android:id="@+id/bt3"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="fill_vertical"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_row="4"
+                android:layout_rowSpan="2"
+                android:background="#ff8800"
+                android:text="3"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/menu3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginRight="50dp"
+                android:layout_row="4"
+                android:text="5 Queijos"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/descr3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginRight="50dp"
+                android:layout_row="5"
+                android:text="Molho, mussarela, parmesão, provolone, gorgonzola e catupiry"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- **************** MENU 4 (6 7)********************* -->
+            <Button
+                android:id="@+id/bt4"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="fill_vertical"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_row="6"
+                android:layout_rowSpan="2"
+                android:background="#ff8800"
+                android:text="4"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/menu4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginRight="50dp"
+                android:layout_row="6"
+                android:text="6 Queijos"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/descr4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginRight="50dp"
+                android:layout_row="7"
+                android:text="Molho, mussarela, parmesão, provolone, gorgonzola, catupiry e cheedar"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- **************** MENU 1 (8 9)********************* -->
+            <Button
+                android:id="@+id/bt5"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="fill_vertical"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_row="8"
+                android:layout_rowSpan="2"
+                android:background="#ff8800"
+                android:text="5"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/menu5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginRight="50dp"
+                android:layout_row="8"
+                android:text="À moda da casa"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/descr5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginRight="50dp"
+                android:layout_row="9"
+                android:text="Molho, mussarela, presunto, palmito, milho, cebola"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- **************** MENU 6 (10 11)********************* -->
+            <Button
+                android:id="@+id/bt6"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="fill_vertical"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_row="10"
+                android:layout_rowSpan="2"
+                android:background="#ff8800"
+                android:text="6"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/menu6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginRight="50dp"
+                android:layout_row="10"
+                android:text="Á parmegiana"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/descr6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginRight="50dp"
+                android:layout_row="11"
+                android:text="Mussarela coberta com molho especial e sapicado com parmesão"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- **************** MENU 7 (12 13)********************* -->
+            <Button
+                android:id="@+id/bt7"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="fill_vertical"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_row="12"
+                android:layout_rowSpan="2"
+                android:background="#ff8800"
+                android:text="7"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/menu7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginRight="50dp"
+                android:layout_row="12"
+                android:text="Cachorrão do pobrão"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/descr7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginRight="50dp"
+                android:layout_row="13"
+                android:text="Salsicha, molho e ervilha - acompanha um Dolly litrão"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- **************** MENU 8 (14 15)********************* -->
+            <Button
+                android:id="@+id/bt8"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="fill_vertical"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_row="14"
+                android:layout_rowSpan="2"
+                android:background="#ff8800"
+                android:text="8"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/menu8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginRight="50dp"
+                android:layout_row="14"
+                android:text="Trois chic"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/descr8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginRight="50dp"
+                android:layout_row="15"
+                android:text="Shiitake ao molho bechamel, lagosta, caviar com trufa branca, queijo winnimere e protos de lupulo - acompanha vinho branco La Joya Gran Reserva Sauvignon Blanc"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+        </GridLayout>
+    </ScrollView>
+</GridLayout>
